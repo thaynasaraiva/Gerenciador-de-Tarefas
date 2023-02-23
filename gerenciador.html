@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gerenciador de Tarefas</h1>
+    </header>
+    <main>
+        <form>
+            <label for="nome">Tarefa:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required>
+            <label for="prioridade">Prioridade:</label>
+            <select id="prioridade" name="prioridade">
+                <option value="alta">Alta</option>
+                <option value="media">Média</option>
+                <option value="baixa">Baixa</option>
+            </select>
+            <button type="submit">Adicionar</button>
+        </form>
+        <ul id="lista-tarefas">
+            <!-- lista de tarefas será gerada dinamicamente com JavaScript -->
+        </ul>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
